@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!--Joni-Vesto 2017-->
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>TETRIS</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="icon.png">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="game.js"></script>
+        <script type="text/javascript">$(document).keypress(function(e){Input(e.which);});</script>
+    </head>
+    <body>
+        <div id="bar">
+
+            
+                    
+        </div>
+        <div id="game">
+            <div id="canvas" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select:none; user-select:none;-o-user-select:none;" unselectable="on"onselectstart="return false;" onmousedown="return false;"></div>
+                <div id="panel">
+                    Next: <br>
+                    <div id="next"  class="help">
+                        
+                    </div><br>
+                    Hold: <br>
+                    <div id="hold" class="help">
+                        
+                    </div><br>
+                    <p id="score">Score: 0</p> <br><br><br><br>
+                    <br><br><br><hr>
+                    <input onclick="Border();" checked type="checkbox" id="vertica"><sup>Vertical</sup> 
+                    <br>
+                    <input onclick="Border();" checked type="checkbox" id="horizon"><sup>Horizontal</sup>
+                    <br>
+                </div>
+            </div>
+      </body>
+</html>
